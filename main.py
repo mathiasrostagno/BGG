@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-st.set_page_config(page_title='Mathias Rostagno\'s Board Game Analysis', layout="wide")
+st.set_page_config(page_title='Mathias Rostagno\'s Board Game Analysis')
 def add_bg_from_url():
     st.markdown(
          f"""
