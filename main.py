@@ -39,7 +39,7 @@ with st.expander('Introduction', expanded = True):
 
 with st.expander('Modules Loading & Importing Data'):
     st.markdown("<h2 style='text-align: center; color: black'>Modules Loading & Importing Data</h2>", unsafe_allow_html=True)
-    if st.checkbox('1. Modules Loading', value=True):
+    if st.checkbox('1. Modules Loading', label_visibility = 'Visible'):
         code1 = '''import streamlit as st \nimport pandas as pd \nimport io'''
         st.code(code1, language='python')
     if st.checkbox('2. Importing Data'):
