@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 
-st.set_page_config(page_title='Mathias Rostagno\'s Board Game Analysis')
+st.set_page_config(page_title='Mathias Rostagno\'s Board Game Analysis', layout="wide")
 def add_bg_from_url():
     st.markdown(
          f"""
@@ -39,7 +39,7 @@ with st.expander('Introduction', expanded = True):
 
 with st.expander('Modules Loading & Importing Data'):
     st.markdown("<h2 style='text-align: center; color: black'>Modules Loading & Importing Data</h2>", unsafe_allow_html=True)
-    if st.checkbox('1. Modules Loading', label_visibility = 'Visible'):
+    if st.checkbox('1. Modules Loading'):
         code1 = '''import streamlit as st \nimport pandas as pd \nimport io'''
         st.code(code1, language='python')
     if st.checkbox('2. Importing Data'):
