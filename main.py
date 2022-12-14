@@ -37,7 +37,7 @@ with st.expander('Introduction', expanded = True):
     col1.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/BoardGameGeek_Logo.svg/440px-BoardGameGeek_Logo.svg.png")
     col2.markdown("![Alt Text](https://i.gifer.com/HNaD.gif)")
 
-with st.beta_expander('Modules Loading & Importing Data'):
+with st.expander('Modules Loading & Importing Data'):
     st.markdown("<h2 style='text-align: center; color: black'>Modules Loading & Importing Data</h2>", unsafe_allow_html=True)
     if st.checkbox('1. Modules Loading'):
         code1 = '''import streamlit as st \nimport pandas as pd \nimport io'''
