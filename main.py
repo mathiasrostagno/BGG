@@ -42,10 +42,10 @@ with st.expander('Modules Loading & Importing Data'):
     if st.checkbox("1. Modules Loading"):
         code1 = 'import streamlit as st \nimport pandas as pd \nimport io'
         st.code(code1, language='python')
-    elif st.checkbox("2. Importing Data"):
+    if st.checkbox("2. Importing Data"):
         code2 = '''df = pd.read_csv('Data/bgg_dataset.csv', sep=';', decimal=',')'''
         st.code(code2, language='python')
-    elif st.checkbox("3. Show Data"):
+    if st.checkbox("3. Show Data"):
         st.dataframe(df)
 
 with st.expander('Basic Exploration'):
